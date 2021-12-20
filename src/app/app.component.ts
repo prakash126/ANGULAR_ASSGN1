@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shoppinglist';
+  // this is for communication from parent to child
+  strName = 'Prakash';
 }

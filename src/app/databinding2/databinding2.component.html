@@ -1,0 +1,58 @@
+
+    <div class="main">
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div>
+                <h2 class="text-center bg-info text-muted">Register Product</h2>
+                <dl>
+                    <dt>Name</dt>
+                    <dd>
+                        <input type="text" [(ngModel)]="Name" class="form-control">
+                    </dd>
+                    <dt>Price</dt>
+                    <dd>
+                        <input type="text" [(ngModel)]="Price" class="form-control">
+                    </dd>
+                    <dt>Is in Stock</dt>
+                    <dd>
+                        <input class="form-check-input" type="radio" name="Stock" id="flexRadioDefault1" value="Avialiable" [(ngModel)]="IsInStock" > Yes
+                        <input class="form-check-input" type="radio" name="Stock" id="flexRadioDefault1" value="Out of Stock" [(ngModel)]="IsInStock" > No
+                    </dd>
+                    <dt>Shipped To</dt>
+                    <dd>
+                        <select name="" id="" [(ngModel)]="ShippedTo" class="form-select">
+                            <option>Delhi</option>
+                            <option>Hyd</option>
+                        </select>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-1">
+                    <div class="d-flex" style="height: 300px;">
+                        <div class="vr bg-primary"></div>
+                      </div>
+                      
+                </div>
+                <div class="col-lg-11">
+                    <div>
+                        <h2 class="text-center bg-success text-white">Product Details</h2>
+                        <dl class="m-2 p-4">
+                            <dt>Name</dt>
+                            <dd>{{Name}}</dd>
+                            <dt>Price</dt>
+                            <dd>{{Price}}</dd>
+                            <dt>Stock status</dt>
+                            <dd>{{IsInStock}}</dd>
+                            <dt>Shipped To</dt>
+                            <dd>{{ShippedTo}}</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
